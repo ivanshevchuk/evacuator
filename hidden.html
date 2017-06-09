@@ -1,0 +1,159 @@
+<div class="hidden">
+<div class="popup" id="popup-order-form">
+<div class="popup-order-calculator">
+<div class="container">
+<h2>Рассчитать эвакуацию автомобиля</h2>
+<div class="calculator js-calculator" data-url="/select-auto-type/" data-start-point="{&quot;latitude&quot;:53.311451,&quot;longitude&quot;:83.620458}">
+<div class="main-slider">
+<div class="type-list">
+<a href="javascript:void(0)" class="type js-type" id="type-78" data-type-id="78" data-type="sedan" data-price="1600" data-desc="Эвакуация седанов и универсалов" data-name="Седан / универсал" data-weight="1,2-1,4">
+<div class="img-wrap">
+<div class="img sedan"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Седан / универсал</div>
+</a>
+<a href="javascript:void(0)" class="type js-type" id="type-79" data-type-id="79" data-type="jeep" data-price="2400" data-desc="Эвакуация джипов и внедорожников" data-name="Джип" data-weight="1,7-2,0">
+<div class="img-wrap">
+<div class="img jeep"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Джип</div>
+</a>
+<a href="javascript:void(0)" class="type js-type" id="type-65" data-type-id="65" data-type="bike" data-price="1200" data-desc="Эвакуация мотоциклов всех классов" data-name="Мотоцикл" data-weight="0,5-0,7">
+<div class="img-wrap">
+<div class="img bike"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Мотоцикл</div>
+</a>
+<a href="javascript:void(0)" class="type js-type" id="type-80" data-type-id="80" data-type="business" data-price="2500" data-desc="Эвакуация коммерческого транспорта" data-name="Коммерческий транспорт" data-weight="1,8-2,0">
+<div class="img-wrap">
+<div class="img business"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Коммерческий транспорт</div>
+</a>
+<a href="javascript:void(0)" class="type js-type" id="type-81" data-type-id="81" data-type="cargo" data-price="2600" data-desc="Эвакуация легкогрузового транспорта" data-name="Легкогрузовой" data-weight="1,8-1,9">
+<div class="img-wrap">
+<div class="img cargo"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Легкогрузовой</div>
+</a>
+<a href="javascript:void(0)" class="type js-type" id="type-64" data-type-id="64" data-type="spec" data-price="2900" data-desc="Эвакуация погрузчиков и уборочной техники" data-name="Спецтехника" data-weight="1,5-2,0">
+<div class="img-wrap">
+<div class="img spec"></div>
+</div>
+<div class="dot"></div>
+<div class="name">Спецтехника</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="label">Масса автомобиля в кг</div>
+<div class="range js-weight-range"></div>
+</div>
+<div class="col region-wrap">
+<label for="location" class="label">Место аварии / поломки</label>
+<select name="location" id="location" data-placeholder="Выберите расположение" class="js-select js-location select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+<option value="moscow" selected="selected">Москва</option>
+<option value="moscow_region">Московская область</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location-container"><span class="select2-selection__rendered" id="select2-location-container" title="Москва">Москва</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+<div class="col range-wrap">
+<div class="js-distance-rang-wrap">
+<div class="label">Расстояние, км</div>
+<div class="range js-distance-range" data-max="200"></div>
+</div>
+</div>
+<div class="col location-wrap">
+<div class="location-icon"></div>
+<a href="javascript:void(0)" class="location js-location-get">Определить местоположение</a>
+</div>
+</div>
+<div class="price-buttons">
+<div class="price-wrap">
+Стоимость эвакуации авто с вашими параметрами <span class="price"><span class="js-price">1600</span> <span class="rub26">Р</span></span>
+</div>
+<a href="https://www.evaco-m.ru/#popup-order-form-2" class="btn orange left js-submit">оформить эвакуацию</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="popup" id="popup-order-form-2">
+<div class="popup-order-form">
+<div class="container">
+<h2>Оформление заказа</h2>
+<form action="https://www.evaco-m.ru/forms/order/" method="post" class="form js-order-form" novalidate="novalidate">
+<div class="js-form-inner">
+<input type="hidden" name="formOrder[form_hidden_16]" value="" class="js-price-value" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" id="formOrder-form_hidden_16" aria-required="true">
+<input type="hidden" name="formOrder[form_hidden_15]" value="" class="js-information-value" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" id="formOrder-form_hidden_15" aria-required="true">
+<div class="row">
+<div class="col1">
+<div class="input-field">
+<label for="formOrder-form_text_9" class="required" aria-required="true">ФИО</label>
+<input type="text" name="formOrder[form_text_9]" id="formOrder-form_text_9" value="" placeholder="Как к вам обратиться" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" data-rule-minlength="2" data-msg-minlength="Значение меньше разрешенной минимальной длины в {0} символа" data-rule-maxlength="255" data-msg-maxlength="Значение больше разрешенной максимальной длины в {0} символов" maxlength="255" aria-required="true">                            </div>
+</div>
+<div class="col2">
+<div class="input-field">
+<label for="formOrder-form_text_11" class="required" aria-required="true">Телефон</label>
+<input type="text" name="formOrder[form_text_11]" id="formOrder-form_text_11" value="" placeholder="+7 ___ ___ __ __" class="js-phone-mask" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" aria-required="true">                            </div>
+</div>
+<div class="col3">
+<div class="input-field">
+<label for="formOrder-form_email_10" data-message="(необязательно)" class="optional">Email</label>
+<input type="text" name="formOrder[form_email_10]" id="formOrder-form_email_10" value="" data-rule-email="true" data-msg-email="Поле заполнено некорректно (пример: name@mail.ru)">                            </div>
+</div>
+</div>
+<div class="row">
+<div class="input-field">
+<label for="formOrder-form_textarea_12" data-message="(необязательно)" class="optional">Комментарий к заказу</label>
+<textarea name="formOrder[form_textarea_12]" id="formOrder-form_textarea_12" data-rule-minlength="0" data-msg-minlength="Значение меньше разрешенной минимальной длины в {0} символа" data-rule-maxlength="1000" data-msg-maxlength="Значение больше разрешенной максимальной длины в {0} символов" maxlength="1000" rows="24" cols="80"></textarea>                        </div>
+</div>
+<div class="price-buttons">
+<div class="params">
+<div class="info-wrap">
+<span class="js-information-text"></span> <a href="https://www.evaco-m.ru/#popup-order-form" class="js-order-form-btn-2 change">Изменить параметры</a>
+</div>
+<div class="price-wrap">
+Стоимость эвакуации авто с вашими параметрами <span class="price"><span class="js-price-text">1600</span> <span class="rub26">Р</span></span>
+</div>
+</div>
+<div class="btn-wrap">
+<a href="javascript:void(0)" class="btn orange left js-submit">оформить эвакуацию</a>
+</div>
+</div>
+</div>
+<div class="success-message js-success-message">
+Ваша заявка отправлена. В самое ближайшее время наши специалисты свяжутся с вами
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="popup" id="popup-callback-form">
+<div class="popup-callback-form">
+<div class="callback-form"><form class="js-feedback-form" enctype="application/x-www-form-urlencoded" method="post" action="https://www.evaco-m.ru/forms/feedback/" novalidate="novalidate">
+<h2>
+Перезвоним в течение 10 минут</h2>
+<div class="row">
+<div class="col1">
+<div class="input-field user">
+<input type="text" name="form_text_5" id="form_text_5" value="" placeholder="Как к вам обращаться" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" data-rule-minlength="2" data-msg-minlength="Значение меньше разрешенной минимальной длины в {0} символа" data-rule-maxlength="255" data-msg-maxlength="Значение больше разрешенной максимальной длины в {0} символов" maxlength="255" aria-required="true">        </div>
+<div class="input-field phone">
+<input type="text" name="form_text_7" id="form_text_7" value="" placeholder="Телефон" data-rule-required="true" data-msg-required="Поле обязательно для заполнения" aria-required="true">        </div>
+</div>
+<div class="col2">
+<div class="phone-num ya-phone">+7 495 150 55 00</div>
+<button name="submit" id="submit" type="button" class="btn orange left js-submit">Отправить</button>    </div>
+</div>
+</form></div>            </div>
+</div>
+<div class="popup" id="popup-success-message">
+<div class="popup-success-message">
+Ваша заявка отправлена. В самое ближайшее время наши специалисты свяжутся с вами.
+</div>
+</div>
+</div>
